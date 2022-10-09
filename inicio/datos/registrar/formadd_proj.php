@@ -53,16 +53,27 @@ if(isset($_POST['submit'])!=""){
 
             <div class="row">
                     <div class="form-group col-md-3">
+                        <label class="small" for="txtCdP">Codigo proyecto</label>
+                        <input type="text" class="form-control form-control-sm" id="txtCdP" name="txtCdP" placeholder="Codigo">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label class="small" for="txtidEst">Id Estudiante</label>
+                        <input type="text" class="form-control form-control-sm" id="txtidEst" name="txtidEst" placeholder="Id">
+                    </div>
+                    <div class="form-group col-md-3">
                         <label class="small" for="txtNomb1user">Nombre Proyecto</label>
                         <input type="text" class="form-control form-control-sm" id="txtNomb1user" name="txtNomb1user" placeholder="Nombre">
                     </div>
+                    
+            </div>
+            <div class="row"> 
                     <div class="form-group col-md-3">
                         <label class="small" for="txtNomb2user">Modalidad</label>
                         <select class="form-select" aria-label="Default select example">
                         <option selected>Modalidad</option>
                             <option value="Interacción Social">Interacción Social </option>
                         </select>
-                    </div>
+                    </div>        
                     <div class="form-group col-md-3">
                         Seleccione Archivo
 			            <input type="file" name="file" id="file" /></td>

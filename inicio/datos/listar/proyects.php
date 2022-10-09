@@ -95,7 +95,7 @@ if ($_SESSION['rol'] == '2') {
                 <th>PROYECTO</th>
                 <th>MODALIDAD</th>
                 <th>ESTUDIANTE</th>
-                <th>DOCENTES</th>
+                <th>FECHA</th>
                 <th>NOTA</th>
                 <th>OPCIONES</th>
             </tr>';
@@ -116,8 +116,8 @@ if ($_SESSION['rol'] == '2') {
             $docentes .= '</ul>';
             $botones = null;
             if ($fila['estado'] == '0') {
-                $botones = '<a type="button" class="btn btn-sm btn-warning asignaAJ mb-0" value="' . $fila['id_proyect'] . '">Asiganr A/J</a>
-                            <a type="button" class="btn btn-sm btn-danger cerrarP mb-0" value="' . $fila['id_proyect'] . '">Cerrar Proyecto</a>';
+                $botones = '<a type="button" class="btn btn-sm btn-warning editarP mb-0" value="' . $fila['id_proyect'] . '">Actualizar</a>
+                            <a type="button" class="btn btn-sm btn-danger cerrarP mb-0" value="' . $fila['id_proyect'] . '">Descargar</a>';
             }
 
 
@@ -127,7 +127,7 @@ if ($_SESSION['rol'] == '2') {
                     <td>' . $fila['nom_proyecto'] . '</td>
                     <td>' . $fila['modalidad'] . '</td>
                     <td>' .  $fila['nombre1'] . ' ' . $fila['nombre2'] . ' ' . $fila['apellido1'] . ' ' . $fila['apellido1'] . ' ' . '</td>
-                    <td>' . $docentes . '</td>
+                    <td>' . $fila['fecha'] . '</td>
                     <td>' .  $fila['nota'] . '</td>
                     <td class="text-center">' . $botones . '</td>
                 </tr>';
